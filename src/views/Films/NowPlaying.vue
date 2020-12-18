@@ -1,5 +1,5 @@
 <template>
     <div>
-        dianying
+        电影模块下的正在热映
     </div>
 </template>

@@ -2,21 +2,21 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 //导入路由模块
-import centerRouter from'@/router/routes/centers'
-import cinemaRouter from "@/router/routes/cinemas";
-import filmRouter from "@/router/routes/film";
+import filmRouter from './routes/films'
+import cinemaRouter from './routes/cinemas'
+import centerRouter from './routes/center'
 
-Vue.use(VueRouter)
+
 
 const routes = [
   //注册路由模块
-  centerRouter,
-  cinemaRouter,
-  filmRouter,
-  {
-    path: '/',
-    redirect:"/films",
-  }
+    filmRouter,
+    cinemaRouter,
+    centerRouter,
+    {
+      path:"/",
+      redirect:"./films"
+    }
 ];
 
 const router = new VueRouter({

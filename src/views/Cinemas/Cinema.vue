@@ -1,5 +1,5 @@
 <template>
     <div>
-        我是电影院
+        电影院模块
     </div>
 </template>
